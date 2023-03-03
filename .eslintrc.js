@@ -4,9 +4,9 @@ module.exports = {
     '@typescript-eslint',
     'jest',
     'security',
-    'sonarjs'
-    //"standard",
-    //"prettier",
+    'sonarjs',
+    "standard",
+    "prettier",
   ],
   extends: [
     'standard',
@@ -17,10 +17,10 @@ module.exports = {
     'plugin:import/warnings',
     'plugin:import/typescript',
     'plugin:security/recommended',
-    'plugin:sonarjs/recommended'
-    //"plugin:prettier/recommended",
-    //"prettier/@typescript-eslint",
-    //"prettier/standard",
+    'plugin:sonarjs/recommended',
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint",
+    "prettier/standard",
   ],
   rules: {
     '@typescript-eslint/no-use-before-define': ['off', { functions: false }],
