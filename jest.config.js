@@ -10,5 +10,5 @@ module.exports = {
     '^mongoose$': '<rootDir>/node_modules/mongoose',
   },
   moduleFileExtensions: [...defaults.moduleFileExtensions, 'ts', 'tsx', 'js'],
-  modulePathIgnorePatterns: ['__tests__/utils', 'dist'],
+  modulePathIgnorePatterns: ['dist'],
 }
