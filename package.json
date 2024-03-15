@@ -3,12 +3,9 @@
   "private": true,
   "version": "1",
   "scripts": {
-    "start": "NODE_PRESERVE_SYMLINKS=1 ts-node-dev --debug --ignore-watch node_modules src/index.ts",
-    "build": "tsc -p tsconfig.build.json",
-    "test-only": "NODE_PRESERVE_SYMLINKS=1 jest --forceExit --detectOpenHandles",
-    "test-debug": "NODE_PRESERVE_SYMLINKS=1 jest",
-    "test-ts": "tsc --noEmit",
-    "jest": "jest"
+    "codegen": "gql-gen",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@types/uuid": "^8.3.0",
@@ -16,7 +13,9 @@
     "dotenv": "^16.0.3",
     "dotenv-flow": "^3.2.0",
     "mongodb-memory-server": "^9.1.6",
-    "uuid": "^8.3.0"
+    "uuid": "^8.3.0",
+    "node-cron": "^3.0.3",
+    "ts-node": "^10.9.2"
   },
   "prettier": {
     "semi": false,
